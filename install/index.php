@@ -22,14 +22,14 @@ class maycat_d7dull extends CModule
 	public function DoInstall()
 	{
 		global $APPLICATION;
-        RegisterModule($this->MODULE_ID);
+        ModuleManager::registerModule($this->MODULE_ID);
 	}
 
 
 	public function DoUninstall()
 	{
 		global $APPLICATION;
-        UnRegisterModule($this->MODULE_ID);
+        ModuleManager::unRegisterModule($this->MODULE_ID);
 	}
 
 }
