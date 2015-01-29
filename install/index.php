@@ -1,6 +1,7 @@
 <?php
 
 use Bitrix\Main\Localization\Loc;
+use Bitrix\Main\ModuleManager;
 
 Loc::loadMessages(__FILE__);
 
