@@ -1,6 +1,8 @@
 <?php
 namespace Maycat\D7dull;
 
+defined('B_PROLOG_INCLUDED') and (B_PROLOG_INCLUDED === true) or die();
+
 use Bitrix\Main\Entity\DataManager;
 use Bitrix\Main\Entity\IntegerField;
 use Bitrix\Main\Entity\StringField;

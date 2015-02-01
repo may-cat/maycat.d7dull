@@ -1,4 +1,6 @@
 <?php
+defined('B_PROLOG_INCLUDED') and (B_PROLOG_INCLUDED === true) or die();
+
 use Bitrix\Main\Application;
 use Bitrix\Main\Loader;
 use Bitrix\Main\Localization\Loc;
