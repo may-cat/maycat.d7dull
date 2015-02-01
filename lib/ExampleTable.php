@@ -4,6 +4,7 @@ namespace Maycat\D7dull;
 use Bitrix\Main\Entity\DataManager;
 use Bitrix\Main\Entity\IntegerField;
 use Bitrix\Main\Entity\StringField;
+use Bitrix\Main\Entity\Validator;
 use Bitrix\Main\Localization\Loc;
 
 Loc::loadMessages(__FILE__);
@@ -21,17 +22,17 @@ class ExampleTable extends DataManager
             new IntegerField('ID', array(
                 'autocomplete' => true,
                 'primary' => true,
-                'title' => 'ID',
+                'title' => Loc::getMessage('ID'),
             )),
             new StringField('NAME', array(
                 'required' => true,
-                'title' => 'Название',
+                'title' => Loc::getMessage('NAME'),
                 'default_value' => function () {
-                    return 'Безымянный пример';
+                    return Loc::getMessage('NAME_DEFAULT_VALUE');
                 },
                 'validation' => function () {
                     return array(
-                        new Entity\Validator\Length(null, 255),
+                        new Validator\Length(null, 255),
                     );
                 },
             )),
