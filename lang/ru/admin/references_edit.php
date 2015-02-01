@@ -5,5 +5,3 @@ $MESS['REFERENCES_ADD_PAGE'] = 'Добавление новой записи в 
 $MESS['REFERENCES_EDIT_PAGE'] = 'Редактирование записи справочника';
 $MESS['REFERENCES_TAB'] = 'Справочник';
 $MESS['REFERENCES_IMAGE_ERROR'] = 'Ошибка загрузки изображения';
-
-?>

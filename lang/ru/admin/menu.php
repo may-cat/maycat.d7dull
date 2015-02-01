@@ -17,5 +17,3 @@ $MESS['REFERENCES_MENU_SERVICECLASS'] = 'Классы обслуживания';
 $MESS['REFERENCES_MENU_AGEGROUP'] = 'Возрастные группы';
 $MESS['REFERENCES_MENU_INITIATOR'] = 'Инициаторы отмены/обмена';
 $MESS['REFERENCES_MENU_IMPORT'] = 'Импорт';
-
-?>

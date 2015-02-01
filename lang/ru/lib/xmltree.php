@@ -8,5 +8,3 @@ $MESS["XML_TREE_DEPTH_LEVEL"] = "Уровень вложенности узла"
 $MESS["XML_TREE_NAME"] = "Имя узла";
 $MESS["XML_TREE_VALUE"] = "Значение узла";
 $MESS["XML_TREE_ATTRIBUTES"] = "Атрибуты узла";
-
-?>

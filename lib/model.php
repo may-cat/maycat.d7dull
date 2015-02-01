@@ -7,7 +7,7 @@ use Bitrix\Main\Localization\Loc;
 
 Loc::loadMessages(__FILE__);
 
-class Model extends Entity\DataManager
+class model extends Entity\DataManager
 {
     public static function getFilePath()
     {
@@ -43,7 +43,4 @@ class Model extends Entity\DataManager
             new Entity\Validator\Length(null, 255),
         );
     }
-
 }
-
-?>
