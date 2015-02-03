@@ -36,8 +36,7 @@ if ((!empty($save) || !empty($restore)) && $request->isPost() && check_bitrix_se
         Option::set(
             ADMIN_MODULE_NAME,
             "max_image_size",
-            $request->getPost('max_image_size'),
-            Loc::getMessage("REFERENCES_MAX_IMAGE_SIZE")
+            $request->getPost('max_image_size')
         );
         CAdminMessage::showMessage(array(
             "MESSAGE" => Loc::getMessage("REFERENCES_OPTIONS_SAVED"),
