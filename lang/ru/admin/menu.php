@@ -1,4 +1,5 @@
 <?php
+defined('B_PROLOG_INCLUDED') and (B_PROLOG_INCLUDED === true) or die();
 
 $MESS['REFERENCES_MENU_TEXT'] = 'Справочники';
 $MESS['REFERENCES_MENU_TITLE'] = 'Справочники';
@@ -17,5 +18,3 @@ $MESS['REFERENCES_MENU_SERVICECLASS'] = 'Классы обслуживания';
 $MESS['REFERENCES_MENU_AGEGROUP'] = 'Возрастные группы';
 $MESS['REFERENCES_MENU_INITIATOR'] = 'Инициаторы отмены/обмена';
 $MESS['REFERENCES_MENU_IMPORT'] = 'Импорт';
-
-?>
