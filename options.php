@@ -5,6 +5,7 @@ defined('ADMIN_MODULE_NAME') or define('ADMIN_MODULE_NAME', 'maycat.d7dull');
 use Bitrix\Main\Application;
 use Bitrix\Main\Config\Option;
 use Bitrix\Main\Localization\Loc;
+use Bitrix\Main\Text\String;
 
 if (!$USER->isAdmin()) {
     $APPLICATION->authForm('Nope');
@@ -63,7 +64,7 @@ $tabControl->begin();
                    size="50"
                    maxlength="5"
                    name="max_image_size"
-                   value="<?=htmlspecialcharsbx(Option::get(ADMIN_MODULE_NAME, "max_image_size", 500));?>"
+                   value="<?=String::htmlEncode(Option::get(ADMIN_MODULE_NAME, "max_image_size", 500));?>"
                    />
         </td>
     </tr>
