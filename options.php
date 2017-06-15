@@ -26,8 +26,8 @@ $tabControl = new CAdminTabControl("tabControl", array(
     ),
 ));
 
-if ((!empty($save) || !empty($restore)) && $request->isPost() && check_bitrix_sessid()) {
-    if (!empty($restore)) {
+if ((!empty($request->getPost('save')) || !empty($request->getPost('restore'))) && $request->isPost() && check_bitrix_sessid()) {
+    if (!empty($request->getPost('restore'))) {
         Option::delete(ADMIN_MODULE_NAME);
         CAdminMessage::showMessage(array(
             "MESSAGE" => Loc::getMessage("REFERENCES_OPTIONS_RESTORED"),
